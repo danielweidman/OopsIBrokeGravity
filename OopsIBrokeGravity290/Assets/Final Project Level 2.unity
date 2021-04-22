@@ -1193,6 +1193,16 @@ PrefabInstance:
       propertyPath: panel
       value: 
       objectReference: {fileID: 1119194354}
+    - target: {fileID: 7013023650050838186, guid: e5c99a3ffd02e3745878a51bd1fd81cc,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7013023650050838186, guid: e5c99a3ffd02e3745878a51bd1fd81cc,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5c99a3ffd02e3745878a51bd1fd81cc, type: 3}
 --- !u!1001 &1446100424
@@ -1403,6 +1413,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7924433411178110715, guid: 9183571f04631cf4185c41ff7a5d83e2,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -7924433411178110715, guid: 9183571f04631cf4185c41ff7a5d83e2,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.3
+      objectReference: {fileID: 0}
     - target: {fileID: -2280322378497570929, guid: 9183571f04631cf4185c41ff7a5d83e2,
         type: 3}
       propertyPath: panel

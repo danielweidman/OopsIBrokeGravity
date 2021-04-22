@@ -24,7 +24,7 @@ public class GravityControl : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 Physics2D.gravity = new Vector2(-9.8f, 0);
-                rb2d.gravityScale = 1;
+                rb2d.gravityScale = 1.5f;
                 panel.gameObject.SetActive(true);
                 StartCoroutine(DelayGravity());
             }
@@ -32,7 +32,7 @@ public class GravityControl : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
                 Physics2D.gravity = new Vector2(9.8f, 0);
-                rb2d.gravityScale = 1;
+                rb2d.gravityScale = 1.5f;
                 panel.gameObject.SetActive(true);
                 StartCoroutine(DelayGravity());
             }
@@ -40,7 +40,7 @@ public class GravityControl : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 Physics2D.gravity = new Vector2(0, 9.8f);
-                rb2d.gravityScale = 1;
+                rb2d.gravityScale = 1.5f;
                 panel.gameObject.SetActive(true);
                 StartCoroutine(DelayGravity());
             }
@@ -48,7 +48,7 @@ public class GravityControl : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
                 Physics2D.gravity = new Vector2(0, -9.8f);
-                rb2d.gravityScale = 1;
+                rb2d.gravityScale = 1.5f;
                 panel.gameObject.SetActive(true);
                 StartCoroutine(DelayGravity());
             }
@@ -58,7 +58,7 @@ public class GravityControl : MonoBehaviour
 
     private IEnumerator DelayGravity() {
         enabled = false;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         panel.gameObject.SetActive(false);
         enabled = true;
     }

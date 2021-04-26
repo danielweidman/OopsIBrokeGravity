@@ -139,15 +139,15 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!114 &57279416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,6 +162,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel: {fileID: 1314470533}
   enabled: 1
+--- !u!1 &222069883 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3905257286581701926, guid: de206cf3639fc014bb905f8374dcdd98,
+    type: 3}
+  m_PrefabInstance: {fileID: 3905257286019035114}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &222069887
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222069883}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1001 &330783827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -474,6 +501,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3860605584022270786, guid: cd385818ecaaeea478413570749a9589,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5099117479285796194, guid: cd385818ecaaeea478413570749a9589,
         type: 3}
       propertyPath: m_RootOrder
@@ -652,6 +684,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7924433411178110715, guid: 9183571f04631cf4185c41ff7a5d83e2,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: ad63da290e1909e4db0022353522bbcc, type: 2}
     - target: {fileID: -2280322378497570929, guid: 9183571f04631cf4185c41ff7a5d83e2,
         type: 3}
       propertyPath: panel
@@ -805,6 +842,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905257286581701927, guid: de206cf3639fc014bb905f8374dcdd98,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905257286581701927, guid: de206cf3639fc014bb905f8374dcdd98,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de206cf3639fc014bb905f8374dcdd98, type: 3}
@@ -1519,8 +1566,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5099117479285796194, guid: cd385818ecaaeea478413570749a9589,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099117479285796194, guid: cd385818ecaaeea478413570749a9589,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099117479285796194, guid: cd385818ecaaeea478413570749a9589,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.1142
       objectReference: {fileID: 0}
     - target: {fileID: 5099117479285796194, guid: cd385818ecaaeea478413570749a9589,
         type: 3}
@@ -1567,6 +1624,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5099117479285796196, guid: cd385818ecaaeea478413570749a9589,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5099117479285796197, guid: cd385818ecaaeea478413570749a9589,
         type: 3}
       propertyPath: position1.x
@@ -1576,6 +1638,11 @@ PrefabInstance:
         type: 3}
       propertyPath: position1.y
       value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099117479285796197, guid: cd385818ecaaeea478413570749a9589,
+        type: 3}
+      propertyPath: position2.x
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 5099117479285796197, guid: cd385818ecaaeea478413570749a9589,
         type: 3}
@@ -1719,7 +1786,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8285144232856455776, guid: e5c99a3ffd02e3745878a51bd1fd81cc,
         type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: -8285144232856455776, guid: e5c99a3ffd02e3745878a51bd1fd81cc,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8285144232856455776, guid: e5c99a3ffd02e3745878a51bd1fd81cc,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8285144232856455776, guid: e5c99a3ffd02e3745878a51bd1fd81cc,
+        type: 3}
       propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8285144232856455776, guid: e5c99a3ffd02e3745878a51bd1fd81cc,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8285144232856455776, guid: e5c99a3ffd02e3745878a51bd1fd81cc,
+        type: 3}
+      propertyPath: m_UseFullKinematicContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 369887248627936385, guid: e5c99a3ffd02e3745878a51bd1fd81cc,
@@ -1792,6 +1884,11 @@ PrefabInstance:
       propertyPath: panel
       value: 
       objectReference: {fileID: 1314470533}
+    - target: {fileID: 7013023650050838186, guid: e5c99a3ffd02e3745878a51bd1fd81cc,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: ad63da290e1909e4db0022353522bbcc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5c99a3ffd02e3745878a51bd1fd81cc, type: 3}
 --- !u!1 &6964321318502030279 stripped

@@ -6,10 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class TransitionPoint : MonoBehaviour
 {
+    AudioSource finished;
     [SerializeField] private string newLevel;
     [SerializeField] GameObject entering;
     [SerializeField] float numberTargets;
     private float count;
+
+    void Start()
+    {
+        finished = GetComponent<AudioSource>();
+    }
 
     public float getCount()
     {
@@ -28,6 +34,7 @@ public class TransitionPoint : MonoBehaviour
             count += 1;
             if (count == numberTargets)
             {
+                finished.Play();
                 SceneManager.LoadScene(newLevel);
             }
         }

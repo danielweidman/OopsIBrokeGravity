@@ -34,7 +34,7 @@ public class Click : MonoBehaviour
             SpawnRepulsiveObject(position);
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
         {
             //arrow.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 90));
             //rectTransform.Rotate(new Vector3(0, 0, 90));
@@ -55,7 +55,7 @@ public class Click : MonoBehaviour
             repulsiveAngle = 180;
         }
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
         {
             //arrow.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 270));
             //rectTransform.Rotate(new Vector3(0, 0, 270));
@@ -76,7 +76,7 @@ public class Click : MonoBehaviour
             repulsiveAngle = 0;
         }
 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
         {
             //arrow.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
             if (currentZ == 90) 
@@ -95,7 +95,7 @@ public class Click : MonoBehaviour
             repulsiveAngle = 90;
         }
 
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
         {
             //arrow.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 180));
             //rectTransform.Rotate(new Vector3(0, 0, 180));

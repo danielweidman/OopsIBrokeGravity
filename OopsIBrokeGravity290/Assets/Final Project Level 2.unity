@@ -1311,6 +1311,11 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -8285144232856455776, guid: e5c99a3ffd02e3745878a51bd1fd81cc,
+        type: 3}
+      propertyPath: m_SleepingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 369887248627936385, guid: e5c99a3ffd02e3745878a51bd1fd81cc,
         type: 3}
       propertyPath: m_Name
@@ -1885,6 +1890,11 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1199318270823588722, guid: 9183571f04631cf4185c41ff7a5d83e2,
+        type: 3}
+      propertyPath: m_SleepingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5025756557738726988, guid: 9183571f04631cf4185c41ff7a5d83e2,
         type: 3}
       propertyPath: m_RootOrder
@@ -2124,6 +2134,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 646596051, guid: 361f804ae3a3a184092e19243e22b314, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 646596052, guid: 361f804ae3a3a184092e19243e22b314, type: 3}
       propertyPath: speed
       value: 0.55

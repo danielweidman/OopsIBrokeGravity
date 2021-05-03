@@ -320,6 +320,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 646596051, guid: 361f804ae3a3a184092e19243e22b314, type: 3}
+      propertyPath: m_Constraints
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 646596052, guid: 361f804ae3a3a184092e19243e22b314, type: 3}
       propertyPath: speed
       value: -0.25
@@ -334,7 +338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 646596052, guid: 361f804ae3a3a184092e19243e22b314, type: 3}
       propertyPath: position2.y
-      value: 3.4
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 9035685442794971718, guid: 361f804ae3a3a184092e19243e22b314,
         type: 3}

@@ -1362,6 +1362,8 @@ MonoBehaviour:
   newLevel: Final Project Level 3
   entering: {fileID: 1902799989}
   numberTargets: 2
+  green: {fileID: 1750880567}
+  orange: {fileID: 0}
 --- !u!1001 &1354905211
 PrefabInstance:
   m_ObjectHideFlags: 0

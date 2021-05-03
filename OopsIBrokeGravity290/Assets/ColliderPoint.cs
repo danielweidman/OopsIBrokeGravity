@@ -7,13 +7,24 @@ public class ColliderPoint : MonoBehaviour
     [SerializeField] GameObject entering;
     [SerializeField] float numberTargets;
     [SerializeField] GameObject transitionPoint;
+    private bool count = false;
+    
+    public void setCount(bool x)
+    {
+        count = x;
+    }
+
+    public bool getCount()
+    {
+        return count;
+    }
 
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject == entering)
         {
-            transitionPoint.GetComponent<TransitionPoint>().setCount(transitionPoint.GetComponent<TransitionPoint>().getCount() + 1);
+            setCount(true);
         }
 
     }
@@ -22,7 +33,7 @@ public class ColliderPoint : MonoBehaviour
     {
         if (other.gameObject == entering)
         {
-            transitionPoint.GetComponent<TransitionPoint>().setCount(transitionPoint.GetComponent<TransitionPoint>().getCount() - 1);
+            setCount(false);
         }
     }
 }

@@ -10,41 +10,64 @@ public class TransitionPoint : MonoBehaviour
     [SerializeField] private string newLevel;
     [SerializeField] GameObject entering;
     [SerializeField] float numberTargets;
-    private float count;
+    [SerializeField] GameObject green;
+    [SerializeField] GameObject orange;
+    private bool done = false;
+
+    private bool count = false;
+
+
+    void Update()
+    {
+        if (done == true)
+        {
+            SceneManager.LoadScene(newLevel);
+        }
+    }
 
     void Start()
     {
         finished = GetComponent<AudioSource>();
     }
 
-    public float getCount()
+    public bool getCount()
     {
         return this.count;
     }
 
-    public void setCount(float x)
+    public void setCount(bool x)
     {
         this.count = x;
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject == entering)
         {
-            count += 1;
-            if (count == numberTargets)
+            setCount(true);
+            if (this.count && green.gameObject.GetComponent<ColliderPoint>().getCount() == true)
+           
+                
+                if(orange.gameObject == null)
+                {
+                    finished.Play();
+                    done = true;
+                }
+            if (orange.gameObject != null && orange.gameObject.GetComponent<ColliderPoint>().getCount() == true)
             {
                 finished.Play();
-                SceneManager.LoadScene(newLevel);
+                done = true;
+            }       
             }
-        }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject == entering)
         {
-            count--;
+            setCount(false);
         }
     }
+
+
 }

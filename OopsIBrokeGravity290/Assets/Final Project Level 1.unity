@@ -663,6 +663,11 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1199318270823588722, guid: 9183571f04631cf4185c41ff7a5d83e2,
+        type: 3}
+      propertyPath: m_SleepingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5025756557738726988, guid: 9183571f04631cf4185c41ff7a5d83e2,
         type: 3}
       propertyPath: m_RootOrder
@@ -2285,6 +2290,11 @@ PrefabInstance:
     - target: {fileID: -8285144232856455776, guid: e5c99a3ffd02e3745878a51bd1fd81cc,
         type: 3}
       propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8285144232856455776, guid: e5c99a3ffd02e3745878a51bd1fd81cc,
+        type: 3}
+      propertyPath: m_SleepingMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8285144232856455776, guid: e5c99a3ffd02e3745878a51bd1fd81cc,

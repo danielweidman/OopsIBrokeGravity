@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Final Project Level 5.unity
     guid: 9aa7e94a7c2dc364ab2c8f601bf0ae09
+  - enabled: 1
+    path: Assets/UIScreens/Title Screen.unity
+    guid: 28bab0862ddb58849ac44d0c93a5a590
+  - enabled: 1
+    path: Assets/UIScreens/Instructions Screen.unity
+    guid: 2caf697ccbc676648b5c34b9dc662861
+  - enabled: 1
+    path: Assets/UIScreens/EndScreenCredits.unity
+    guid: c82e5930d49c31a45b3b9cc924102e10
   m_configObjects: {}

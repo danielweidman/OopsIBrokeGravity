@@ -12,9 +12,18 @@ public class TransitionPoint : MonoBehaviour
     [SerializeField] float numberTargets;
     [SerializeField] GameObject green;
     [SerializeField] GameObject orange;
+    private bool done = false;
 
-    private bool count;
+    private bool count = false;
 
+
+    void Update()
+    {
+        if (done == true)
+        {
+            SceneManager.LoadScene(newLevel);
+        }
+    }
 
     void Start()
     {
@@ -42,12 +51,12 @@ public class TransitionPoint : MonoBehaviour
                 if(orange.gameObject == null)
                 {
                     finished.Play();
-                    SceneManager.LoadScene(newLevel);
+                    done = true;
                 }
             if (orange.gameObject != null && orange.gameObject.GetComponent<ColliderPoint>().getCount() == true)
             {
                 finished.Play();
-                SceneManager.LoadScene(newLevel);
+                done = true;
             }       
             }
     }
@@ -59,4 +68,6 @@ public class TransitionPoint : MonoBehaviour
             setCount(false);
         }
     }
+
+
 }

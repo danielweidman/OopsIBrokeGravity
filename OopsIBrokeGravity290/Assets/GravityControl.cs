@@ -27,7 +27,7 @@ public class GravityControl : MonoBehaviour
     {
         if (enabled)
         {
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
             {
                 Physics2D.gravity = new Vector2(-9.8f, 0);
                 rb2d.gravityScale = 1.5f;
@@ -35,7 +35,7 @@ public class GravityControl : MonoBehaviour
                 StartCoroutine(DelayGravity());
             }
 
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+            if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
             {
                 Physics2D.gravity = new Vector2(9.8f, 0);
                 rb2d.gravityScale = 1.5f;
@@ -43,7 +43,7 @@ public class GravityControl : MonoBehaviour
                 StartCoroutine(DelayGravity());
             }
 
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
             {
                 Physics2D.gravity = new Vector2(0, 9.8f);
                 rb2d.gravityScale = 1.5f;
@@ -51,7 +51,7 @@ public class GravityControl : MonoBehaviour
                 StartCoroutine(DelayGravity());
             }
 
-            if (Input.GetKeyDown(KeyCode.DownArrow))
+            if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
             {
                 Physics2D.gravity = new Vector2(0, -9.8f);
                 rb2d.gravityScale = 1.5f;
@@ -61,27 +61,27 @@ public class GravityControl : MonoBehaviour
         }
         else if (!enabled)
         {
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
             {
                 Physics2D.gravity = new Vector2(0.0f, 0);
                 rb2d.gravityScale = 0.0f;
                 panel.gameObject.SetActive(true);
             }
-            if (Input.GetKeyDown(KeyCode.RightArrow))
-            {
-                Physics2D.gravity = new Vector2(0.0f, 0);
-                rb2d.gravityScale = 0.0f;
-                panel.gameObject.SetActive(true);
-            }
-
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
             {
                 Physics2D.gravity = new Vector2(0.0f, 0);
                 rb2d.gravityScale = 0.0f;
                 panel.gameObject.SetActive(true);
             }
 
-            if (Input.GetKeyDown(KeyCode.DownArrow))
+            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
+            {
+                Physics2D.gravity = new Vector2(0.0f, 0);
+                rb2d.gravityScale = 0.0f;
+                panel.gameObject.SetActive(true);
+            }
+
+            if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
             {
                 Physics2D.gravity = new Vector2(0.0f, 0);
                 rb2d.gravityScale = 0.0f;

@@ -136,7 +136,7 @@ public class Click : MonoBehaviour
         {
             repulsiveObject.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 90));
         }
-        if (repulsiveAngle == 279) 
+        if (repulsiveAngle == 270) 
         {
             repulsiveObject.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 180));
         }

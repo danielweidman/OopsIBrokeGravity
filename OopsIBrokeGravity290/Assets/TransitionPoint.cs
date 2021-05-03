@@ -13,21 +13,15 @@ public class TransitionPoint : MonoBehaviour
     [SerializeField] GameObject green;
     [SerializeField] GameObject orange;
 
-<<<<<<< HEAD
     private bool count;
 
-=======
->>>>>>> 99d97ef113d393131fb2b971597dc7cd676fde18
+
     void Start()
     {
         finished = GetComponent<AudioSource>();
     }
 
-<<<<<<< HEAD
     public bool getCount()
-=======
-    public float getCount()
->>>>>>> 99d97ef113d393131fb2b971597dc7cd676fde18
     {
         return this.count;
     }

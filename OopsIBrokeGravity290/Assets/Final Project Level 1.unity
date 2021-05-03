@@ -2010,6 +2010,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3860605584022270786, guid: cd385818ecaaeea478413570749a9589,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5099117479285796194, guid: cd385818ecaaeea478413570749a9589,
         type: 3}
       propertyPath: m_RootOrder
@@ -2397,6 +2402,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 646596051, guid: 361f804ae3a3a184092e19243e22b314, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 646596052, guid: 361f804ae3a3a184092e19243e22b314, type: 3}
       propertyPath: position1.y
       value: 1

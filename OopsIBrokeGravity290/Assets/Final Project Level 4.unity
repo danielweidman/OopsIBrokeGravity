@@ -655,6 +655,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+<<<<<<< HEAD
 --- !u!1 &478457089 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2412838239280113056, guid: 3a9cc494976bca044a0f4a7c3dfb638c,
@@ -676,6 +677,8 @@ MonoBehaviour:
   entering: {fileID: 1025227977}
   numberTargets: 0
   transitionPoint: {fileID: 2101849975}
+=======
+>>>>>>> 99d97ef113d393131fb2b971597dc7cd676fde18
 --- !u!1001 &505387106
 PrefabInstance:
   m_ObjectHideFlags: 0

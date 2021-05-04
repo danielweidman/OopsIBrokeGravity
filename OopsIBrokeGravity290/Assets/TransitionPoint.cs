@@ -45,19 +45,21 @@ public class TransitionPoint : MonoBehaviour
         if (other.gameObject == entering)
         {
             setCount(true);
-            if (this.count && green.gameObject.GetComponent<ColliderPoint>().getCount() == true)
+            if (this.count){
+                if( green.gameObject.GetComponent<ColliderPoint>().getCount() == true)){
            
                 
-                if(orange.gameObject == null)
-                {
+                    if(orange.gameObject == null)
+                    {
+                        finished.Play();
+                        done = true;
+                    }
+                if (orange.gameObject != null && orange.gameObject.GetComponent<ColliderPoint>().getCount() == true)
+                    {
                     finished.Play();
                     done = true;
-                }
-            if (orange.gameObject != null && orange.gameObject.GetComponent<ColliderPoint>().getCount() == true)
-            {
-                finished.Play();
-                done = true;
-            }       
+                    }    
+                 }
             }
     }
 

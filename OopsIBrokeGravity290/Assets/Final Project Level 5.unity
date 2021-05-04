@@ -821,10 +821,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aac07e645cde9e47a283dab098e492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newLevel: Final Project Level 1
+  newLevel: EndScreenCredits
   entering: {fileID: 228740398}
   numberTargets: 0
-  green: {fileID: 1906038498}
   orange: {fileID: 2111065355}
 --- !u!61 &497770212
 BoxCollider2D:

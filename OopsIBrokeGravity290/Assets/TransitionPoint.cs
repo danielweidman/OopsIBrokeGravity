@@ -16,17 +16,22 @@ public class TransitionPoint : MonoBehaviour
     private bool count = false;
 
 
+    public void Awake()
+    {
+        green = GameObject.Find("Green Target");
+    }
+
     void Update()
     {
+
+        if(green.gameObject == null)
+        {
+            green = GameObject.Find("Green Target");
+        }
         if (done == true)
         {
             SceneManager.LoadScene(newLevel);
         }
-    }
-
-    public void Start()
-    {
-        green = GameObject.Find("Green Target");
     }
 
     public bool getCount()

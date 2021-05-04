@@ -8,9 +8,17 @@ public class ColliderPointGreen : MonoBehaviour
     private bool count = false;
 
 
-    void Start()
+    void Awake()
     {
         entering = GameObject.Find("Green Block");
+    }
+
+    void Update()
+    {
+        if (entering == null)
+        {
+            entering = GameObject.Find("Green Block");
+        }
     }
 
     public void setCount(bool x)

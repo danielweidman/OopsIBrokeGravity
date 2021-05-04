@@ -46,7 +46,7 @@ public class TransitionPoint : MonoBehaviour
         {
             setCount(true);
             if (this.count){
-                if( green.gameObject.GetComponent<ColliderPoint>().getCount() == true)){
+                if( green.gameObject.GetComponent<ColliderPoint>().getCount() == true){
            
                 
                     if(orange.gameObject == null)
@@ -61,6 +61,7 @@ public class TransitionPoint : MonoBehaviour
                     }    
                  }
             }
+        }
     }
 
     void OnTriggerExit2D(Collider2D other)

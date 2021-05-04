@@ -121,6 +121,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &2216795 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5610278020454211950, guid: 9183571f04631cf4185c41ff7a5d83e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1763605458}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &332765348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1223,7 +1229,6 @@ MonoBehaviour:
   newLevel: Final Project Level 3
   entering: {fileID: 1902799989}
   numberTargets: 2
-  green: {fileID: 1750880567}
   orange: {fileID: 0}
 --- !u!1001 &1354905211
 PrefabInstance:
@@ -1810,12 +1815,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1615884208}
   m_CullTransparentMesh: 0
---- !u!1 &1676909677 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5610278020454211950, guid: 9183571f04631cf4185c41ff7a5d83e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1763605458}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1750880567 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8199258025801756869, guid: d2d2cd2e13248054c90588c989348d08,
@@ -1834,8 +1833,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd4bfc6108a692f469e8e805cb0c1c43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entering: {fileID: 1676909677}
-  numberTargets: 2
+  entering: {fileID: 2216795}
+  numberTargets: 0
   transitionPoint: {fileID: 1182085457}
 --- !u!61 &1750880569
 BoxCollider2D:

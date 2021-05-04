@@ -2087,10 +2087,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aac07e645cde9e47a283dab098e492f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newLevel: Final Project Level 2
+  newLevel: Final Project Level 3
   entering: {fileID: 6964321318502030279}
   numberTargets: 2
-  green: {fileID: 6094799422121231396}
   orange: {fileID: 0}
 --- !u!61 &4428020736247027946
 BoxCollider2D:
@@ -2324,7 +2323,7 @@ PrefabInstance:
     - target: {fileID: 8199258025801756869, guid: d2d2cd2e13248054c90588c989348d08,
         type: 3}
       propertyPath: m_Name
-      value: Target
+      value: Green Target
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2d2cd2e13248054c90588c989348d08, type: 3}
@@ -2373,7 +2372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entering: {fileID: 57279411}
-  numberTargets: 2
+  numberTargets: 0
   transitionPoint: {fileID: 4428020736247027944}
 --- !u!1001 &6964321318502030278
 PrefabInstance:

@@ -9,7 +9,7 @@ public class TransitionPoint : MonoBehaviour
     [SerializeField] private string newLevel;
     [SerializeField] GameObject entering;
     [SerializeField] float numberTargets;
-    [SerializeField] GameObject green;
+    GameObject green;
     [SerializeField] GameObject orange;
     private bool done = false;
 
@@ -24,9 +24,9 @@ public class TransitionPoint : MonoBehaviour
         }
     }
 
-    void Start()
+    public void Start()
     {
- 
+        green = GameObject.Find("Green Target");
     }
 
     public bool getCount()

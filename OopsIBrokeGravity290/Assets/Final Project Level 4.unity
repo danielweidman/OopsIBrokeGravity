@@ -2636,6 +2636,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5521132993643859939, guid: c9c23f305c3378b4a89a7a2748bd8741,
         type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5521132993643859939, guid: c9c23f305c3378b4a89a7a2748bd8741,
+        type: 3}
       propertyPath: m_SleepingMode
       value: 0
       objectReference: {fileID: 0}

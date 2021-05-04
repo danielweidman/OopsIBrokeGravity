@@ -187,10 +187,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1600, y: 900}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -715,30 +715,30 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Instructions:
 
-    
-
-    The goal is two get the heavy blocks from their
-    starting position to their respective target positions (enlarged grey outlines)
-    by playing with gravity.
 
 
-    - You can control the direction of gravity within
-    the puzzle by using the arrow keys or WASD.
+    The goal is two get the heavy blocks from their starting
+    position to their respective target positions (enlarged grey outlines) by playing
+    with gravity.
 
-    - You can turn gravity on and
-    off with the on/off switch.
 
-    - You can add in a repeller by clicking anywhere
-    on the puzzle board. The repeller will add additional gravity the area surrounding
-    it and push objects away from it in the direct gravity was set to upon its creation.
+    - You can control the direction of gravity within the puzzle
+    by using the arrow keys or WASD.
+
+    - You can turn gravity on and off with
+    the on/off switch.
+
+    - You can add in a repeller by clicking anywhere on the
+    puzzle board. The repeller will add additional gravity the area surrounding it
+    and push objects away from it in the direct gravity was set to upon its creation.
 
     -
     You can restart a given level with the "restart" button.
 
-    
 
-    There are
-    5 levels to complete. Good luck!'
+
+    There are 5 levels
+    to complete. Good luck!'
 --- !u!222 &1350701973
 CanvasRenderer:
   m_ObjectHideFlags: 0

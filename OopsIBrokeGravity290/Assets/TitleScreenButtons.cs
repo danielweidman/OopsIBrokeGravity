@@ -30,7 +30,7 @@ public class TitleScreenButtons : MonoBehaviour
         SceneManager.LoadScene(titlescreen);
     }
 
-    void Exit()
+    public void Exit()
     {
         Application.Quit();
     }
